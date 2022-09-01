@@ -19,16 +19,18 @@ namespace ConsultaCEP
             BancoCEP CriaBAse = new BancoCEP();
             ConfirmacaoSexo pessoa = new ConfirmacaoSexo();
 
+            List<ConfirmacaoSexo> ListaPessoa = new List<ConfirmacaoSexo>();
+
 
 
             Console.WriteLine("Informe 1º nome:");
             String TextNome = Console.ReadLine();
 
             Console.WriteLine("Informe Sobrenome:");
-            String TextFone = Console.ReadLine();
+            String TextSobrenome = Console.ReadLine();
 
             Console.WriteLine("Informe Data Nascimento:");
-            String TextEmail = Console.ReadLine();
+            String TextNascimento = Console.ReadLine();
 
          Rotulo_TextSexo:
             Console.WriteLine("Informe seu Sexo:");
@@ -52,6 +54,16 @@ namespace ConsultaCEP
                 Console.WriteLine("-----------------------------------");
                 goto Rotulo_TextSexo;
             }
+
+
+            pessoa.Nome = TextNome;
+            pessoa.Sobrenome = TextSobrenome;
+            pessoa.DataNascimentos = TextNascimento;
+            pessoa.Sexo = TextSexo;
+
+
+            ListaPessoa.Add(pessoa);
+
 
 //------------------------------------------------------------------------------------------------
 //------------------------------Codigo que Caça Cep-----------------------------------------------

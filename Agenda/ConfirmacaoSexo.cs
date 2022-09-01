@@ -10,9 +10,6 @@ namespace Agenda
         public string Sobrenome { get; set; }
         public string DataNascimentos { get; set; }
         public string Sexo { get; set; }
-
-       
-       
        
     }
 }
