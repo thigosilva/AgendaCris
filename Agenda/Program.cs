@@ -61,8 +61,8 @@ namespace ConsultaCEP
             {
                 try
                 {
-                    Console.WriteLine("--[ Consulta de CEP ]--");
-                    Console.WriteLine("-->Informe CEP:");
+                    Console.WriteLine("[ Consulta de CEP ]");
+                    Console.WriteLine(" Informe CEP:");
                     String CEP = Console.ReadLine();
 
                     switch (CEP.ToUpper())
